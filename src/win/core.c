@@ -36,6 +36,16 @@
 #include "heap-inl.h"
 #include "req-inl.h"
 
+// for static lib link error.
+#pragma comment(lib,"ws2_32.lib")
+#pragma comment (lib,"Advapi32.lib")
+#pragma comment (lib,"Iphlpapi.lib")
+#pragma comment(lib, "Psapi.lib")
+#pragma comment(lib, "user32.lib")
+#pragma comment(lib, "userenv.lib")
+// end for static lib link error.]
+
+
 /* uv_once initialization guards */
 static uv_once_t uv_init_guard_ = UV_ONCE_INIT;
 
